@@ -1,0 +1,27 @@
+{
+  "agent_name": "Pinecone AI Agent",
+  "agent_version": "1.0.0",
+  "agent_description": "An AI agent with long-term memory powered by Pinecone and OpenAI GPT-4",
+  "goals": [
+    "Process user inputs intelligently using GPT-4",
+    "Maintain long-term memory using Pinecone vector database",
+    "Learn from interactions through summarization",
+    "Log all decisions and interactions for transparency"
+  ],
+  "memory_settings": {
+    "pinecone_index_name": "agent-memory-index",
+    "embedding_dimension": 1536,
+    "top_k_memories": 5,
+    "memory_relevance_threshold": 0.7
+  },
+  "reasoning_settings": {
+    "model": "gpt-4",
+    "temperature": 0.7,
+    "max_tokens": 1000,
+    "context_window": 8000
+  },
+  "logging_settings": {
+    "log_file": "agent_interactions.jsonl",
+    "log_level": "INFO"
+  }
+}
